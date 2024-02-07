@@ -17,5 +17,9 @@ def get_pet_by_id(pet_id: int):
 
 @app.post("/pets", response_model=PetsSchema)
 def add_pets(pet: PetsSchema):    
-   return lista_de_pets.add_pets(pet)
+   return lista_de_pets.add_pets(pet)#adicionando maisa coisa
+
+@app.post("/pets", response_model=PetsSchema)
+def add_pets(pet: PetsSchema):    
+   return lista_de_pets.add_pets(pet)#adicionando maisa coisa
     
