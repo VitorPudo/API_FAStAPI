@@ -1,7 +1,6 @@
 name: CI
 
 on: pull_request
- 
 
 jobs:
   Continuous-Integration:
@@ -18,7 +17,7 @@ jobs:
         python-version: '3.11'
         
     - name: Install requirements
-      run: pip install -requirements-dev.txt
+      run: pip install -r requirements-dev.txt
       
     - name: List directory contents
       run: ls -la
